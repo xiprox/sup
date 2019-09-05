@@ -1,0 +1,16 @@
+name: sup
+description: A widget which displays an image, a title, and a subtitle for errors, empty states, or just fancy custom messages.
+version: 0.1.1
+author: İhsan Işık <x.ihsan@gmail.com>
+homepage: https://github.com/xiprox/sup
+
+environment:
+  sdk: '>=2.2.2 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter

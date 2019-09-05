@@ -1,0 +1,29 @@
+name: example
+description: Sup example app.
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.2.2 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  sup:
+    path: ../../sup
+  url_launcher: ^5.2.7
+  flutter_svg: ^0.15.0
+  flare_flutter: ^1.7.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+  fonts:
+    - family: Chinese Rocks
+      fonts:
+        - asset: assets/fonts/chinese_rocks.ttf
