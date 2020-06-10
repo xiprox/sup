@@ -1,4 +1,4 @@
-<h3><p align="center">sup</p></h3>
+<h3><p align="center">'sup</p></h3>
 
 <p align="center"><i>A Flutter widget which displays an image, a title, and a subtitle for errors, empty states, or just fancy custom messages.</i></p>
 
@@ -93,7 +93,7 @@ The priority in which Sup applies configurations is the following:
 ## License
 
 ```
-Copyright (C) 2019 İhsan Işık
+Copyright (C) 2020 Maestral Solutions, Inc.
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
