@@ -1,3 +1,7 @@
+## [1.0.1] - June 10, 2020
+
+Updated license
+
 ## [1.0.0] - June 10, 2020
 
 Updated dependencies
