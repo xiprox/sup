@@ -74,6 +74,41 @@ class MyApp extends StatelessWidget {
               switchEnabled: true,
             ),
             ExampleCard(
+              child: QuickSup.error(
+                title: 'Quick custom error',
+                wrapImageInCircle: false,
+                image: Container(
+                  width: 120,
+                  height: 120,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(16),
+                    gradient: RadialGradient(
+                      center: Alignment(-0.5, -0.5),
+                      radius: 1,
+                      colors: [
+                        Color(0xffFD6A19),
+                        Color(0xffFF0A00),
+                      ],
+                    ),
+                  ),
+                  child: Center(
+                    child: Text(
+                      'Oops',
+                      style: TextStyle(
+                        fontSize: 30,
+                        fontWeight: FontWeight.w600,
+                        letterSpacing: -3,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                ),
+                subtitle:
+                    'This is an example of QuickSup.error with custom image',
+              ),
+              switchEnabled: true,
+            ),
+            ExampleCard(
               child: Sup(),
               switchEnabled: true,
             ),
