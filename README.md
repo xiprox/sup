@@ -10,11 +10,9 @@ Follow the [installation instructions](https://pub.dev/packages/sup#-installing-
 
 ### QuickSup
 
-Use QuickSup to quickly show standard errors
-and empty states, fast and easy.
+Use QuickSup to quickly show standard errors and empty states, fast and easy.
 
-Ideal for when you want to avoid spending time on your UI messages
-but want a bit more than a Text widget.
+Ideal for when you want to avoid spending time on your UI messages but want a bit more than a Text widget.
 
 ```dart
 QuickSup.error(
@@ -34,9 +32,7 @@ QuickSup.empty(
 
 If you want to customize, one place to do that is SupConfigurator.
 
-This is an [InheritedWidget](https://www.youtube.com/watch?v=1t-8rBCGBYw) that hosts a default SupConfig wherever
-you place it in your widget tree. Sup widgets then access the nearest
-SupConfigurator and render themselves accordingly.
+This is an [InheritedWidget](https://www.youtube.com/watch?v=1t-8rBCGBYw) that hosts a default SupConfig wherever you place it in your widget tree. Sup widgets then access the nearest SupConfigurator and render themselves accordingly.
 
 ```dart
 MaterialApp(
@@ -52,12 +48,9 @@ MaterialApp(
 
 ### Sup.from (Config/Templates)
 
-If you are going to have different Sup configurations, such as
-specific errors, specific empty states, hints, etc., this is for you.
+If you are going to have different Sup configurations, such as specific errors, specific empty states, hints, etc., this is for you.
 
-Define a SupConfig instance somewhere in your codebase, then pass
-it to Sup using `Sup.from`. That's all. You can pass specific
-override params too.
+Define a SupConfig instance somewhere in your codebase, then pass it to Sup using `Sup.from`. That's all. You can pass specific override params too.
 
 ```dart
 Sup.from(MySupConfigs.sendError);
