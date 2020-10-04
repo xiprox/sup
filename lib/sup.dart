@@ -70,7 +70,7 @@ enum SupAlignment { start, center, end }
 /// 1. Sup parameters
 ///
 /// ## More information
-/// For more information, check out the [repository](https://github.com/xiprox/sup).
+/// For more information, check out the [repository](https://github.com/maestralsol/sup).
 class Sup extends StatelessWidget {
   final Widget image;
   final Widget title;
@@ -243,7 +243,7 @@ class Sup extends StatelessWidget {
                 child: Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Text(
-                    'This is a Sup widget with no configuration.\n\nLearn about how you can make it work for you at https://github.com/xiprox/sup or try the QuickSup widget.',
+                    'This is a Sup widget with no configuration.\n\nLearn about how you can make it work for you at https://github.com/maestralsol/sup or try the QuickSup widget.',
                     textAlign: TextAlign.center,
                   ),
                 ),
