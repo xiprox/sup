@@ -1,3 +1,7 @@
+## [1.1.0] - October 4, 2020
+
+Added ability to pass custom image widget to QuickSup.
+
 ## [1.0.1] - June 10, 2020
 
 Updated license
