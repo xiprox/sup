@@ -81,11 +81,11 @@ Sup(
 );
 ```
 
-## Configuration Priority
+## Configuration Order
 
-The priority in which Sup applies configurations is the following:
+The order in which Sup applies configurations is the following:
 
-4. Package defaults (see [SupDefaults](lib/sup_defaults.dart))
-5. User defaults ([SupConfigurator](lib/sup_configurator.dart))
-6. Sup.from
-7. Sup parameters
+1. Package defaults (see [SupDefaults](lib/sup_defaults.dart))
+2. User defaults ([SupConfigurator](lib/sup_configurator.dart))
+3. Sup.from
+4. Sup parameters
