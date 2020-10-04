@@ -12,7 +12,7 @@ dependencies:
   sup:
     path: ../../sup
   url_launcher: ^5.2.7
-  flutter_svg: ^0.15.0
+  flutter_svg: ^0.18.0
   flare_flutter: ^1.7.3
 
 dev_dependencies:
