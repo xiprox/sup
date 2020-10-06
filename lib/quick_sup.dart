@@ -59,6 +59,7 @@ class QuickSup extends StatelessWidget {
   }) {
     return QuickSup._(
       type: _QuickSupType.empty,
+      image: image,
       title: title,
       subtitle: subtitle,
       wrapImageInCircle: wrapImageInCircle,
