@@ -1,4 +1,4 @@
-## [1.1.0] - October 6, 2020
+## [1.1.1] - October 6, 2020
 
 Fixed image param not working with `QuickSup.empty`.
 
