@@ -1,3 +1,7 @@
+## [1.1.0] - October 6, 2020
+
+Fixed image param not working with `QuickSup.empty`.
+
 ## [1.1.0] - October 4, 2020
 
 Added ability to pass custom image widget to QuickSup.
