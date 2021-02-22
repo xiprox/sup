@@ -27,8 +27,7 @@ class SupConfigurator extends InheritedWidget {
   }) : super(child: child);
 
   static SupConfigurator of(BuildContext context) {
-    return context.inheritFromWidgetOfExactType(SupConfigurator)
-        as SupConfigurator;
+    return context.dependOnInheritedWidgetOfExactType<SupConfigurator>();
   }
 
   @override
