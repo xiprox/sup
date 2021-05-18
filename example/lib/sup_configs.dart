@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:sup/sup.dart';
+import 'package:supp/sup.dart';
 
 import 'package:example/widgets/fancy_button.dart';
 import 'package:example/widgets/slightly_raised_button.dart';

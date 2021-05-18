@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sup/sup.dart';
+import 'package:supp/sup.dart';
 
 enum _QuickSupType { error, empty }
 

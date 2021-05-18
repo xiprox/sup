@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-import 'package:sup/sup_config.dart';
-import 'package:sup/sup_defaults.dart';
-import 'package:sup/sup_configurator.dart';
+import 'package:supp/sup_config.dart';
+import 'package:supp/sup_defaults.dart';
+import 'package:supp/sup_configurator.dart';
 
-export 'package:sup/quick_sup.dart';
-export 'package:sup/sup_config.dart';
-export 'package:sup/sup_configurator.dart';
+export 'package:supp/quick_sup.dart';
+export 'package:supp/sup_config.dart';
+export 'package:supp/sup_configurator.dart';
 
 enum SupAlignment { start, center, end }
 
@@ -70,7 +70,7 @@ enum SupAlignment { start, center, end }
 /// 1. Sup parameters
 ///
 /// ## More information
-/// For more information, check out the [repository](https://github.com/maestralsol/sup).
+/// For more information, check out the [repository](https://github.com/xiprox/sup).
 class Sup extends StatelessWidget {
   final Widget? image;
   final Widget? title;

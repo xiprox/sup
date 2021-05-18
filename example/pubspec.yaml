@@ -13,7 +13,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  sup:
+  supp:
     path: ../../sup
   url_launcher: ^6.0.3
   flutter_svg: ^0.22.0

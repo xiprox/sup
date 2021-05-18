@@ -1,6 +1,6 @@
 import 'package:example/widgets/example_card.dart';
 import 'package:flutter/material.dart';
-import 'package:sup/sup.dart';
+import 'package:supp/sup.dart';
 
 import 'package:example/examples.dart';
 import 'package:example/sup_configs.dart';

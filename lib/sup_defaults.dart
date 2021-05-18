@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sup/sup.dart';
+import 'package:supp/sup.dart';
 
 /// Package defaults for [Sup].
 class SupDefaults {

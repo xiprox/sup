@@ -1,7 +1,7 @@
-name: sup
+name: supp
 description: A widget which displays an image, a title, and a subtitle for errors, empty states, or just fancy custom messages.
 version: 1.2.0
-homepage: https://github.com/maestralsol/sup
+homepage: https://github.com/xiprox/sup
 
 environment:
   sdk: ">=2.12.0 <3.0.0"

@@ -1,5 +1,5 @@
 import 'package:flutter/widgets.dart';
-import 'package:sup/sup.dart';
+import 'package:supp/sup.dart';
 
 /// An [InheritedWidget] that can be used to provide a default
 /// [SupConfig] anywhere in the widget tree.
