@@ -72,21 +72,21 @@ enum SupAlignment { start, center, end }
 /// ## More information
 /// For more information, check out the [repository](https://github.com/maestralsol/sup).
 class Sup extends StatelessWidget {
-  final Widget image;
-  final Widget title;
-  final Widget subtitle;
-  final Widget bottom;
-  final SupAlignment alignment;
+  final Widget? image;
+  final Widget? title;
+  final Widget? subtitle;
+  final Widget? bottom;
+  final SupAlignment? alignment;
 
   /// Spacing between the children (i.e. image, title, etc.).
-  final double spacing;
+  final double? spacing;
 
   /// Padding _around_ the widget.
-  final EdgeInsets padding;
+  final EdgeInsets? padding;
 
   /// Used to hold a reference to to config passed to [Sup.from]
   /// for access during build.
-  SupConfig _config;
+  SupConfig? _config;
 
   /// Creates a Sup instance.
   ///
@@ -106,10 +106,10 @@ class Sup extends StatelessWidget {
   /// Pass parameters to override config.
   factory Sup.from(
     SupConfig config, {
-    Widget image,
-    Text title,
-    Text subtitle,
-    Widget bottom,
+    Widget? image,
+    Text? title,
+    Text? subtitle,
+    Widget? bottom,
   }) {
     return Sup(
       image: image,
@@ -182,45 +182,45 @@ class Sup extends StatelessWidget {
     }
 
     return Padding(
-      padding: config.padding,
+      padding: config.padding!,
       child: Column(
         mainAxisSize: MainAxisSize.min,
-        crossAxisAlignment: _columnAlignmentFromSupAlignment(config.alignment),
+        crossAxisAlignment: _columnAlignmentFromSupAlignment(config.alignment!),
         children: <Widget>[
           // Image
           if (config.image != null) ...[
-            config.image,
+            config.image!,
             SizedBox(height: config.spacing),
           ],
 
           // Title
           if (config.title != null) ...[
             DefaultTextStyle(
-              style: theme.textTheme.title.copyWith(
+              style: (theme.textTheme.headline6 ?? TextStyle()).copyWith(
                 fontSize: 20,
                 fontWeight: FontWeight.w700,
               ),
-              textAlign: _textAlignFromSupAlignment(config.alignment),
-              child: config.title,
+              textAlign: _textAlignFromSupAlignment(config.alignment!),
+              child: config.title!,
             ),
-            SizedBox(height: config.spacing),
+            SizedBox(height: config.spacing!),
           ],
 
           // Subtitle
           if (config.subtitle != null) ...[
             DefaultTextStyle(
-              style: theme.textTheme.caption.copyWith(
+              style: (theme.textTheme.caption ?? TextStyle()).copyWith(
                 fontSize: 16,
               ),
-              textAlign: _textAlignFromSupAlignment(config.alignment),
-              child: config.subtitle,
+              textAlign: _textAlignFromSupAlignment(config.alignment!),
+              child: config.subtitle!,
             ),
           ],
 
           // Bottom widget (e.g. a retry button)
           if (config.bottom != null) ...[
-            SizedBox(height: config.spacing),
-            config.bottom,
+            SizedBox(height: config.spacing!),
+            config.bottom!,
           ],
         ],
       ),

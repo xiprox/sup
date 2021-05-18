@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
 class SlightlyRaisedButton extends StatelessWidget {
-  final Color color;
-  final String label;
-  final Brightness brightness;
-  final Function onPressed;
+  final Color? color;
+  final String? label;
+  final Brightness? brightness;
+  final Function()? onPressed;
 
   SlightlyRaisedButton({
     this.color,

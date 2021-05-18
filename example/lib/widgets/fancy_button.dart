@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
 class FancyButton extends StatelessWidget {
-  final Color color;
+  final Color? color;
   final String label;
-  final Brightness brightness;
-  final Function onPressed;
+  final Brightness? brightness;
+  final Function()? onPressed;
 
   FancyButton({
     this.color,
-    this.label,
+    required this.label,
     this.brightness,
     this.onPressed,
   });

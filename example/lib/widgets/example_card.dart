@@ -3,11 +3,11 @@ import 'package:flutter/material.dart';
 class ExampleCard extends StatefulWidget {
   final bool switchEnabled;
   final Brightness defaultBrightness;
-  final Color backgroundColor;
+  final Color? backgroundColor;
   final Widget child;
 
   ExampleCard({
-    this.child,
+    required this.child,
     this.defaultBrightness = Brightness.light,
     this.backgroundColor,
     this.switchEnabled = false,
@@ -18,19 +18,11 @@ class ExampleCard extends StatefulWidget {
 }
 
 class _ExampleCardState extends State<ExampleCard> {
-  ThemeData theme;
-
-  _loadDefaultThemeIfNull() {
-    if (theme == null) {
-      theme = widget.defaultBrightness == Brightness.light
-          ? ThemeData.light()
-          : ThemeData.dark();
-    }
-  }
+  ThemeData? theme;
 
   _toggleTheme() {
     setState(() {
-      theme = theme.brightness == Brightness.light
+      theme = theme?.brightness == Brightness.light
           ? ThemeData.dark()
           : ThemeData.light();
     });
@@ -38,7 +30,9 @@ class _ExampleCardState extends State<ExampleCard> {
 
   @override
   Widget build(BuildContext context) {
-    _loadDefaultThemeIfNull();
+    theme ??= widget.defaultBrightness == Brightness.light
+        ? ThemeData.light()
+        : ThemeData.dark();
 
     final switchEnabled =
         widget.switchEnabled && widget.backgroundColor == null;
@@ -49,12 +43,12 @@ class _ExampleCardState extends State<ExampleCard> {
         children: <Widget>[
           Expanded(
             child: Theme(
-              data: theme,
+              data: theme!,
               child: Card(
                 color: Colors.white,
                 child: AnimatedContainer(
                   duration: Duration(milliseconds: 200),
-                  color: widget.backgroundColor ?? theme.cardColor,
+                  color: widget.backgroundColor ?? theme!.cardColor,
                   child: Center(
                     child: widget.child,
                   ),
@@ -69,7 +63,7 @@ class _ExampleCardState extends State<ExampleCard> {
                 Text('Dark Theme'),
                 SizedBox(width: 8),
                 Switch(
-                  value: theme.brightness == Brightness.dark,
+                  value: theme?.brightness == Brightness.dark,
                   onChanged: (value) => _toggleTheme(),
                 ),
               ],

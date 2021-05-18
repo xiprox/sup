@@ -3,17 +3,17 @@ import 'package:flutter/widgets.dart';
 import 'sup.dart';
 
 class SupConfig {
-  final Widget image;
-  final Widget title;
-  final Widget subtitle;
-  final Widget bottom;
-  final SupAlignment alignment;
+  final Widget? image;
+  final Widget? title;
+  final Widget? subtitle;
+  final Widget? bottom;
+  final SupAlignment? alignment;
 
   /// Spacing between the children (i.e. image, title, etc.)
-  final double spacing;
+  final double? spacing;
 
   /// Padding _around_ the widget
-  final EdgeInsets padding;
+  final EdgeInsets? padding;
 
   const SupConfig({
     this.image,
@@ -27,7 +27,7 @@ class SupConfig {
 
   /// Merges this config with given [other] config, prefering [other]'s
   /// values whenever there's a conflict.
-  SupConfig merge(SupConfig other) {
+  SupConfig merge(SupConfig? other) {
     if (other == null) return this;
     return copyWith(
       image: other.image,
@@ -44,13 +44,13 @@ class SupConfig {
   /// and the values passed. In case of conflict, prefers the
   /// passed value.
   SupConfig copyWith({
-    Widget image,
-    Widget title,
-    Widget subtitle,
-    Widget bottom,
-    SupAlignment alignment,
-    double spacing,
-    EdgeInsets padding,
+    Widget? image,
+    Widget? title,
+    Widget? subtitle,
+    Widget? bottom,
+    SupAlignment? alignment,
+    double? spacing,
+    EdgeInsets? padding,
   }) {
     return SupConfig(
       image: image ?? this.image,
