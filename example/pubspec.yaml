@@ -15,9 +15,9 @@ dependencies:
     sdk: flutter
   sup:
     path: ../../sup
-  url_launcher: ^5.2.7
-  flutter_svg: ^0.18.0
-  flare_flutter: ^1.7.3
+  url_launcher: ^6.0.3
+  flutter_svg: ^0.22.0
+  flare_flutter: ^3.0.0
 
 dev_dependencies:
   flutter_test:
