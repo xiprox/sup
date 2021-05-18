@@ -239,11 +239,11 @@ class Sup extends StatelessWidget {
             child: Padding(
               padding: const EdgeInsets.all(8.0),
               child: Container(
-                color: theme.canvasColor,
+                color: theme.colorScheme.surface,
                 child: Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Text(
-                    'This is a Sup widget with no configuration.\n\nLearn about how you can make it work for you at https://github.com/maestralsol/sup or try the QuickSup widget.',
+                    'This is a Sup widget with no configuration.\n\nLearn about how you can make it work for you at https://github.com/xiprox/sup or try the QuickSup widget.',
                     textAlign: TextAlign.center,
                   ),
                 ),
