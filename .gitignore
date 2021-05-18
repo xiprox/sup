@@ -78,3 +78,9 @@ example/linux/flutter/generated_plugins.cmake
 example/macos/Flutter/GeneratedPluginRegistrant.swift
 example/windows/flutter/generated_plugin_registrant.cc
 .gitignore
+pubspec.yaml
+example/linux/flutter/generated_plugin_registrant.h
+.gitignore
+example/windows/flutter/generated_plugins.cmake
+example/windows/flutter/generated_plugin_registrant.h
+example/linux/flutter/generated_plugin_registrant.cc
