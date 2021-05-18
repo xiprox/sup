@@ -86,7 +86,7 @@ class Sup extends StatelessWidget {
 
   /// Used to hold a reference to to config passed to [Sup.from]
   /// for access during build.
-  SupConfig? _config;
+  final SupConfig? _config;
 
   /// Creates a Sup instance.
   ///
@@ -99,7 +99,8 @@ class Sup extends StatelessWidget {
     this.alignment,
     this.spacing,
     this.padding,
-  });
+    SupConfig? config,
+  }) : _config = config;
 
   /// Creates a Sup instance using given config.
   ///
@@ -116,7 +117,8 @@ class Sup extends StatelessWidget {
       title: title,
       subtitle: subtitle,
       bottom: bottom,
-    ).._config = config;
+      config: config,
+    );
   }
 
   _columnAlignmentFromSupAlignment(SupAlignment alignment) {
