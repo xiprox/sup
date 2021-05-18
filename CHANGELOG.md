@@ -1,3 +1,6 @@
+## [1.2.0] - May 18, 2021
+Added support for null-safety.
+
 ## [1.1.1] - October 6, 2020
 
 Fixed image param not working with `QuickSup.empty`.
