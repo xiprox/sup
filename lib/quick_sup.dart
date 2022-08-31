@@ -96,10 +96,12 @@ class QuickSup extends StatelessWidget {
     final s = subtitle == null ? null : Text(subtitle!);
     final r = onRetry == null
         ? null
-        : FlatButton(
+        : TextButton(
             child: Text(retryText ?? 'Retry'),
             onPressed: onRetry,
-            textColor: theme.accentColor,
+            style: TextButton.styleFrom(
+              foregroundColor: theme.primaryColor,
+            ),
           );
 
     return Sup(image: img, title: t, subtitle: s, bottom: r);
